@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Projekt1pmu.GravitationalLawPage"
+             Title="Zakon gravitacije">
+    <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Center">
+
+        <Label 
+            Text="Kalkulacija gravitacijske sile" 
+            FontSize="24" 
+            HorizontalOptions="Center"/>
+
+        <Entry x:Name="mass1Entry"
+               Placeholder="Unesite masu 1 (kg)"/>
+        <Entry x:Name="mass2Entry"
+               Placeholder="Unesite masu 2 (kg)"/>
+        <Entry x:Name="distanceEntry"
+               Placeholder="Unesite udaljenost (m)"/>
+
+        <Button
+                Text="Izračunaj gravitacijsku silu"
+                Clicked="OnCalculateGravitationalForceClicked"
+                HorizontalOptions="Center"/>
+
+        <Label 
+            x:Name="gravitationalResultLabel" 
+            Text="Gravitacijska sila: " 
+            FontSize="18" 
+            HorizontalOptions="Center"/>
+    </VerticalStackLayout>
+</ContentPage>
